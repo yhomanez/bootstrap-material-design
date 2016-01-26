@@ -2028,9 +2028,6 @@
      * ------------------------------------------------------------------------
      */
     var Default = {
-      decorator: {
-        template: '<span class=\'mdb-form-control-decorator\'></span>'
-      },
       requiredClasses: ['form-control']
     };
 
@@ -2053,9 +2050,6 @@
         if (_this.isEmpty()) {
           _this.removeIsFilled();
         }
-
-        // Add marker div the end of the form-group
-        _this.$element.after(_this.config.decorator.template);
         return _this;
       }
 

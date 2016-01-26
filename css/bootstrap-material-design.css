@@ -10670,54 +10670,35 @@ form {
   margin-bottom: 0;
 }
 
-/* line 27, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
-.form-control, .form-control:focus,
-.mdb-form-group.is-focused .form-control {
+/* line 25, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+.form-control {
+  background-repeat: no-repeat;
+  background-position: center bottom, center calc(100% - 1px);
+  -webkit-background-size: 0 100%, 100% 100%;
+          background-size: 0 100%, 100% 100%;
   border: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, .26);
+  -webkit-transition: background 0s ease-out;
+       -o-transition: background 0s ease-out;
+          transition: background 0s ease-out;
 }
 
 /* line 2, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 fieldset[disabled][disabled] .form-control, .form-control.disabled, .form-control:disabled, .form-control[disabled] {
+  background-image: none;
   border-bottom: 1px dotted rgba(0, 0, 0, .26);
 }
 
-/* line 40, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
-.mdb-form-control-decorator {
-  position: relative;
-  top: -1px;
-  display: block;
+/* line 39, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+.form-control:focus,
+.mdb-form-group.is-focused .form-control {
+  -webkit-background-size: 100% 100%, 100% 100%;
+          background-size: 100% 100%, 100% 100%;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
-/* line 44, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
-.mdb-form-control-decorator::before, .mdb-form-control-decorator::after {
-  position: absolute;
-  width: 0;
-  height: 2px;
-  content: "";
-  -webkit-transition: .3s ease all;
-       -o-transition: .3s ease all;
-          transition: .3s ease all;
-}
-
-/* line 53, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
-.form-control:focus ~ .mdb-form-control-decorator::before,
-.mdb-form-group.is-focused .form-control ~ .mdb-form-control-decorator::before, .form-control:focus ~ .mdb-form-control-decorator::after,
-.mdb-form-group.is-focused .form-control ~ .mdb-form-control-decorator::after {
-  width: 50%;
-}
-
-/* line 58, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
-.mdb-form-control-decorator::before {
-  left: 50%;
-}
-
-/* line 61, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
-.mdb-form-control-decorator::after {
-  right: 50%;
-}
-
-/* line 72, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 51, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-help {
   position: absolute;
   display: none;
@@ -10725,7 +10706,7 @@ fieldset[disabled][disabled] .form-control, .form-control.disabled, .form-contro
   font-weight: normal;
 }
 
-/* line 79, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 58, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-form-group.is-focused .mdb-help {
   display: block;
 }
@@ -10953,9 +10934,36 @@ fieldset[disabled]
   color: rgba(0, 0, 0, .26);
 }
 
-/* line 74, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
-.form-control {
-  border-color: rgba(0, 0, 0, .26);
+/* line 80, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.form-control,
+.is-focused .form-control {
+  background-image: -webkit-linear-gradient(bottom, #009688 2px, rgba(0, 150, 136, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px);
+  background-image:      -o-linear-gradient(bottom, #009688 2px, rgba(0, 150, 136, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px);
+  background-image:         linear-gradient(to top, #009688 2px, rgba(0, 150, 136, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px);
+}
+
+/* line 87, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.form-control.form-control-success,
+.is-focused .form-control.form-control-success {
+  background-image: -webkit-linear-gradient(bottom, #009688 2px, rgba(0, 150, 136, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+  background-image:      -o-linear-gradient(bottom, #009688 2px, rgba(0, 150, 136, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+  background-image:         linear-gradient(to top, #009688 2px, rgba(0, 150, 136, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+}
+
+/* line 93, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.form-control.form-control-warning,
+.is-focused .form-control.form-control-warning {
+  background-image: -webkit-linear-gradient(bottom, #009688 2px, rgba(0, 150, 136, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+  background-image:      -o-linear-gradient(bottom, #009688 2px, rgba(0, 150, 136, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+  background-image:         linear-gradient(to top, #009688 2px, rgba(0, 150, 136, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+}
+
+/* line 99, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.form-control.form-control-danger,
+.is-focused .form-control.form-control-danger {
+  background-image: -webkit-linear-gradient(bottom, #009688 2px, rgba(0, 150, 136, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
+  background-image:      -o-linear-gradient(bottom, #009688 2px, rgba(0, 150, 136, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
+  background-image:         linear-gradient(to top, #009688 2px, rgba(0, 150, 136, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
 }
 
 /* line 8, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
@@ -11002,7 +11010,7 @@ fieldset[disabled]
   color: rgba(0, 0, 0, .26);
 }
 
-/* line 85, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 113, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .is-focused [class^='mdb-label'],
 .is-focused [class*=' mdb-label'],
 .is-focused [class^='mdb-label'],
@@ -11010,32 +11018,25 @@ fieldset[disabled]
   color: #009688;
 }
 
-/* line 90, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 118, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .is-focused .mdb-label-placeholder,
 .is-focused .mdb-label-placeholder {
   color: rgba(0, 0, 0, .26);
 }
 
-/* line 95, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 123, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .is-focused .form-control,
 .is-focused .form-control {
   border-color: rgba(0, 0, 0, .26);
 }
 
-/* line 100, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 128, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .is-focused .input-group-addon,
 .is-focused .input-group-addon {
   border-color: rgba(0, 0, 0, .26);
 }
 
-/* line 106, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
-.is-focused .mdb-form-control-decorator::before, .is-focused .mdb-form-control-decorator::after,
-.is-focused .mdb-form-control-decorator::before,
-.is-focused .mdb-form-control-decorator::after {
-  background-color: #009688;
-}
-
-/* line 113, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 132, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .is-focused .mdb-help,
 .is-focused .mdb-help {
   color: rgba(0, 0, 0, .54);
@@ -11047,9 +11048,36 @@ fieldset[disabled]
   color: #4caf50;
 }
 
-/* line 74, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
-.has-success .form-control {
-  border-color: rgba(0, 0, 0, .26);
+/* line 80, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-success .form-control,
+.is-focused .has-success .form-control {
+  background-image: -webkit-linear-gradient(bottom, #4caf50 2px, rgba(76, 175, 80, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px);
+  background-image:      -o-linear-gradient(bottom, #4caf50 2px, rgba(76, 175, 80, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px);
+  background-image:         linear-gradient(to top, #4caf50 2px, rgba(76, 175, 80, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px);
+}
+
+/* line 87, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-success .form-control.form-control-success,
+.is-focused .has-success .form-control.form-control-success {
+  background-image: -webkit-linear-gradient(bottom, #4caf50 2px, rgba(76, 175, 80, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+  background-image:      -o-linear-gradient(bottom, #4caf50 2px, rgba(76, 175, 80, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+  background-image:         linear-gradient(to top, #4caf50 2px, rgba(76, 175, 80, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+}
+
+/* line 93, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-success .form-control.form-control-warning,
+.is-focused .has-success .form-control.form-control-warning {
+  background-image: -webkit-linear-gradient(bottom, #4caf50 2px, rgba(76, 175, 80, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+  background-image:      -o-linear-gradient(bottom, #4caf50 2px, rgba(76, 175, 80, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+  background-image:         linear-gradient(to top, #4caf50 2px, rgba(76, 175, 80, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+}
+
+/* line 99, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-success .form-control.form-control-danger,
+.is-focused .has-success .form-control.form-control-danger {
+  background-image: -webkit-linear-gradient(bottom, #4caf50 2px, rgba(76, 175, 80, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
+  background-image:      -o-linear-gradient(bottom, #4caf50 2px, rgba(76, 175, 80, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
+  background-image:         linear-gradient(to top, #4caf50 2px, rgba(76, 175, 80, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
 }
 
 /* line 8, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
@@ -11092,34 +11120,29 @@ fieldset[disabled]
   color: #4caf50;
 }
 
-/* line 85, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 113, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-success .is-focused [class^='mdb-label'],
 .has-success .is-focused [class*=' mdb-label'], .has-success.is-focused [class^='mdb-label'],
 .has-success.is-focused [class*=' mdb-label'] {
   color: #4caf50;
 }
 
-/* line 90, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 118, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-success .is-focused .mdb-label-placeholder, .has-success.is-focused .mdb-label-placeholder {
   color: #4caf50;
 }
 
-/* line 95, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 123, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-success .is-focused .form-control, .has-success.is-focused .form-control {
   border-color: #4caf50;
 }
 
-/* line 100, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 128, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-success .is-focused .input-group-addon, .has-success.is-focused .input-group-addon {
   border-color: #4caf50;
 }
 
-/* line 106, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
-.has-success .is-focused .mdb-form-control-decorator::before, .has-success .is-focused .mdb-form-control-decorator::after, .has-success.is-focused .mdb-form-control-decorator::before, .has-success.is-focused .mdb-form-control-decorator::after {
-  background-color: #4caf50;
-}
-
-/* line 113, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 132, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-success .is-focused .mdb-help, .has-success.is-focused .mdb-help {
   color: rgba(0, 0, 0, .54);
 }
@@ -11130,9 +11153,36 @@ fieldset[disabled]
   color: #03a9f4;
 }
 
-/* line 74, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
-.has-info .form-control {
-  border-color: rgba(0, 0, 0, .26);
+/* line 80, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-info .form-control,
+.is-focused .has-info .form-control {
+  background-image: -webkit-linear-gradient(bottom, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px);
+  background-image:      -o-linear-gradient(bottom, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px);
+  background-image:         linear-gradient(to top, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px);
+}
+
+/* line 87, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-info .form-control.form-control-success,
+.is-focused .has-info .form-control.form-control-success {
+  background-image: -webkit-linear-gradient(bottom, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+  background-image:      -o-linear-gradient(bottom, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+  background-image:         linear-gradient(to top, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+}
+
+/* line 93, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-info .form-control.form-control-warning,
+.is-focused .has-info .form-control.form-control-warning {
+  background-image: -webkit-linear-gradient(bottom, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+  background-image:      -o-linear-gradient(bottom, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+  background-image:         linear-gradient(to top, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+}
+
+/* line 99, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-info .form-control.form-control-danger,
+.is-focused .has-info .form-control.form-control-danger {
+  background-image: -webkit-linear-gradient(bottom, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
+  background-image:      -o-linear-gradient(bottom, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
+  background-image:         linear-gradient(to top, #03a9f4 2px, rgba(3, 169, 244, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
 }
 
 /* line 8, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
@@ -11175,34 +11225,29 @@ fieldset[disabled]
   color: #03a9f4;
 }
 
-/* line 85, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 113, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-info .is-focused [class^='mdb-label'],
 .has-info .is-focused [class*=' mdb-label'], .has-info.is-focused [class^='mdb-label'],
 .has-info.is-focused [class*=' mdb-label'] {
   color: #03a9f4;
 }
 
-/* line 90, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 118, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-info .is-focused .mdb-label-placeholder, .has-info.is-focused .mdb-label-placeholder {
   color: #03a9f4;
 }
 
-/* line 95, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 123, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-info .is-focused .form-control, .has-info.is-focused .form-control {
   border-color: #03a9f4;
 }
 
-/* line 100, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 128, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-info .is-focused .input-group-addon, .has-info.is-focused .input-group-addon {
   border-color: #03a9f4;
 }
 
-/* line 106, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
-.has-info .is-focused .mdb-form-control-decorator::before, .has-info .is-focused .mdb-form-control-decorator::after, .has-info.is-focused .mdb-form-control-decorator::before, .has-info.is-focused .mdb-form-control-decorator::after {
-  background-color: #03a9f4;
-}
-
-/* line 113, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 132, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-info .is-focused .mdb-help, .has-info.is-focused .mdb-help {
   color: rgba(0, 0, 0, .54);
 }
@@ -11213,9 +11258,36 @@ fieldset[disabled]
   color: #ff5722;
 }
 
-/* line 74, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
-.has-warning .form-control {
-  border-color: rgba(0, 0, 0, .26);
+/* line 80, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-warning .form-control,
+.is-focused .has-warning .form-control {
+  background-image: -webkit-linear-gradient(bottom, #ff5722 2px, rgba(255, 87, 34, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px);
+  background-image:      -o-linear-gradient(bottom, #ff5722 2px, rgba(255, 87, 34, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px);
+  background-image:         linear-gradient(to top, #ff5722 2px, rgba(255, 87, 34, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px);
+}
+
+/* line 87, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-warning .form-control.form-control-success,
+.is-focused .has-warning .form-control.form-control-success {
+  background-image: -webkit-linear-gradient(bottom, #ff5722 2px, rgba(255, 87, 34, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+  background-image:      -o-linear-gradient(bottom, #ff5722 2px, rgba(255, 87, 34, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+  background-image:         linear-gradient(to top, #ff5722 2px, rgba(255, 87, 34, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+}
+
+/* line 93, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-warning .form-control.form-control-warning,
+.is-focused .has-warning .form-control.form-control-warning {
+  background-image: -webkit-linear-gradient(bottom, #ff5722 2px, rgba(255, 87, 34, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+  background-image:      -o-linear-gradient(bottom, #ff5722 2px, rgba(255, 87, 34, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+  background-image:         linear-gradient(to top, #ff5722 2px, rgba(255, 87, 34, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+}
+
+/* line 99, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-warning .form-control.form-control-danger,
+.is-focused .has-warning .form-control.form-control-danger {
+  background-image: -webkit-linear-gradient(bottom, #ff5722 2px, rgba(255, 87, 34, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
+  background-image:      -o-linear-gradient(bottom, #ff5722 2px, rgba(255, 87, 34, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
+  background-image:         linear-gradient(to top, #ff5722 2px, rgba(255, 87, 34, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
 }
 
 /* line 8, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
@@ -11258,34 +11330,29 @@ fieldset[disabled]
   color: #ff5722;
 }
 
-/* line 85, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 113, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-warning .is-focused [class^='mdb-label'],
 .has-warning .is-focused [class*=' mdb-label'], .has-warning.is-focused [class^='mdb-label'],
 .has-warning.is-focused [class*=' mdb-label'] {
   color: #ff5722;
 }
 
-/* line 90, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 118, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-warning .is-focused .mdb-label-placeholder, .has-warning.is-focused .mdb-label-placeholder {
   color: #ff5722;
 }
 
-/* line 95, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 123, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-warning .is-focused .form-control, .has-warning.is-focused .form-control {
   border-color: #ff5722;
 }
 
-/* line 100, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 128, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-warning .is-focused .input-group-addon, .has-warning.is-focused .input-group-addon {
   border-color: #ff5722;
 }
 
-/* line 106, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
-.has-warning .is-focused .mdb-form-control-decorator::before, .has-warning .is-focused .mdb-form-control-decorator::after, .has-warning.is-focused .mdb-form-control-decorator::before, .has-warning.is-focused .mdb-form-control-decorator::after {
-  background-color: #ff5722;
-}
-
-/* line 113, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 132, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-warning .is-focused .mdb-help, .has-warning.is-focused .mdb-help {
   color: rgba(0, 0, 0, .54);
 }
@@ -11296,9 +11363,36 @@ fieldset[disabled]
   color: #f44336;
 }
 
-/* line 74, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
-.has-danger .form-control {
-  border-color: rgba(0, 0, 0, .26);
+/* line 80, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-danger .form-control,
+.is-focused .has-danger .form-control {
+  background-image: -webkit-linear-gradient(bottom, #f44336 2px, rgba(244, 67, 54, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px);
+  background-image:      -o-linear-gradient(bottom, #f44336 2px, rgba(244, 67, 54, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px);
+  background-image:         linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px);
+}
+
+/* line 87, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-danger .form-control.form-control-success,
+.is-focused .has-danger .form-control.form-control-success {
+  background-image: -webkit-linear-gradient(bottom, #f44336 2px, rgba(244, 67, 54, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+  background-image:      -o-linear-gradient(bottom, #f44336 2px, rgba(244, 67, 54, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+  background-image:         linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
+}
+
+/* line 93, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-danger .form-control.form-control-warning,
+.is-focused .has-danger .form-control.form-control-warning {
+  background-image: -webkit-linear-gradient(bottom, #f44336 2px, rgba(244, 67, 54, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+  background-image:      -o-linear-gradient(bottom, #f44336 2px, rgba(244, 67, 54, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+  background-image:         linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
+}
+
+/* line 99, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.has-danger .form-control.form-control-danger,
+.is-focused .has-danger .form-control.form-control-danger {
+  background-image: -webkit-linear-gradient(bottom, #f44336 2px, rgba(244, 67, 54, 0) 2px), -webkit-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
+  background-image:      -o-linear-gradient(bottom, #f44336 2px, rgba(244, 67, 54, 0) 2px), -o-linear-gradient(bottom, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
+  background-image:         linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, .26) 1px, transparent 1px), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
 }
 
 /* line 8, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
@@ -11341,45 +11435,40 @@ fieldset[disabled]
   color: #f44336;
 }
 
-/* line 85, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 113, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-danger .is-focused [class^='mdb-label'],
 .has-danger .is-focused [class*=' mdb-label'], .has-danger.is-focused [class^='mdb-label'],
 .has-danger.is-focused [class*=' mdb-label'] {
   color: #f44336;
 }
 
-/* line 90, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 118, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-danger .is-focused .mdb-label-placeholder, .has-danger.is-focused .mdb-label-placeholder {
   color: #f44336;
 }
 
-/* line 95, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 123, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-danger .is-focused .form-control, .has-danger.is-focused .form-control {
   border-color: #f44336;
 }
 
-/* line 100, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 128, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-danger .is-focused .input-group-addon, .has-danger.is-focused .input-group-addon {
   border-color: #f44336;
 }
 
-/* line 106, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
-.has-danger .is-focused .mdb-form-control-decorator::before, .has-danger .is-focused .mdb-form-control-decorator::after, .has-danger.is-focused .mdb-form-control-decorator::before, .has-danger.is-focused .mdb-form-control-decorator::after {
-  background-color: #f44336;
-}
-
-/* line 113, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 132, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .has-danger .is-focused .mdb-help, .has-danger.is-focused .mdb-help {
   color: rgba(0, 0, 0, .54);
 }
 
-/* line 111, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 90, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-form-group {
   position: relative;
   padding-top: 1.75rem;
 }
 
-/* line 119, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 98, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-form-group [class^='mdb-label'],
 .mdb-form-group [class*=' mdb-label'] {
   position: absolute;
@@ -11389,35 +11478,35 @@ fieldset[disabled]
           transition: .3s ease all;
 }
 
-/* line 126, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 105, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-form-group [class^='mdb-label'].mdb-label-floating,
 .mdb-form-group [class*=' mdb-label'].mdb-label-floating {
   will-change: left, top, contents;
 }
 
-/* line 132, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 111, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-form-group.is-filled .mdb-label-placeholder {
   display: none;
 }
 
-/* line 140, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 119, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-form-group.mdb-collapse-inline {
   padding: 0;
 }
 
-/* line 145, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 124, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-form-group.mdb-collapse-inline .collapse.in {
   max-width: 600px;
 }
 
-/* line 154, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 133, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-form-group.mdb-collapse-inline .collapsing,
 .mdb-form-group.mdb-collapse-inline .width:not(.collapse),
 .mdb-form-group.mdb-collapse-inline .collapse.in {
   display: inline-block;
 }
 
-/* line 160, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 139, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-form-group.mdb-collapse-inline .collapsing {
   -webkit-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
        -o-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
@@ -11427,7 +11516,7 @@ fieldset[disabled]
           transition-duration: .2s;
 }
 
-/* line 163, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 184, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .form-control,
 .mdb-form-group label,
 .mdb-form-group input::-webkit-input-placeholder {
@@ -11449,7 +11538,7 @@ fieldset[disabled]
   line-height: 1;
 }
 
-/* line 169, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .radio label,
 .mdb-form-group label.radio-inline,
 .mdb-form-group .checkbox label,
@@ -11458,7 +11547,7 @@ fieldset[disabled]
   line-height: 1.5;
 }
 
-/* line 178, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 199, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group input::-webkit-input-placeholder {
   font-size: 1rem;
 }
@@ -11472,20 +11561,20 @@ fieldset[disabled]
   font-size: 1rem;
 }
 
-/* line 183, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 204, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .checkbox label,
 .mdb-form-group .radio label,
 .mdb-form-group label {
   font-size: 1rem;
 }
 
-/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 211, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .mdb-label-floating,
 .mdb-form-group .mdb-label-placeholder {
   top: 2.1875rem;
 }
 
-/* line 201, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 222, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.is-focused .mdb-label-floating,
 .mdb-form-group .is-focused .mdb-label-floating, .mdb-form-group.is-filled .mdb-label-floating,
 .mdb-form-group .is-filled .mdb-label-floating {
@@ -11494,25 +11583,50 @@ fieldset[disabled]
   font-size: .75rem;
 }
 
-/* line 207, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 228, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .mdb-label-static {
   top: 1rem;
   left: 0;
   font-size: .75rem;
 }
 
-/* line 215, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 236, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .mdb-help {
   margin-top: 0;
   font-size: .75rem;
 }
 
-/* line 169, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 243, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.mdb-form-group .form-control.form-control-success, .mdb-form-group .form-control.form-control-warning, .mdb-form-group .form-control.form-control-danger {
+  -webkit-background-size: 0 100%, 100% 100%, 1.21875rem 1.21875rem;
+          background-size: 0 100%, 100% 100%, 1.21875rem 1.21875rem;
+}
+
+/* line 250, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.mdb-form-group .form-control.form-control-success, .mdb-form-group .form-control.form-control-success:focus,
+.mdb-form-group.is-focused .mdb-form-group .form-control.form-control-success, .mdb-form-group .form-control.form-control-warning, .mdb-form-group .form-control.form-control-warning:focus,
+.mdb-form-group.is-focused .mdb-form-group .form-control.form-control-warning, .mdb-form-group .form-control.form-control-danger, .mdb-form-group .form-control.form-control-danger:focus,
+.mdb-form-group.is-focused .mdb-form-group .form-control.form-control-danger {
+  padding-right: 0;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center calc(100% - 1px), center right .46875rem;
+}
+
+/* line 258, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.mdb-form-group .form-control.form-control-success:focus,
+.mdb-form-group.is-focused .mdb-form-group .form-control.form-control-success, .mdb-form-group .form-control.form-control-warning:focus,
+.mdb-form-group.is-focused .mdb-form-group .form-control.form-control-warning, .mdb-form-group .form-control.form-control-danger:focus,
+.mdb-form-group.is-focused .mdb-form-group .form-control.form-control-danger {
+  -webkit-background-size: 100% 100%, 100% 100%, 1.21875rem 1.21875rem;
+          background-size: 100% 100%, 100% 100%, 1.21875rem 1.21875rem;
+}
+
+/* line 148, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-form-group.mdb-form-group-sm {
   padding-top: 1.40625rem;
 }
 
-/* line 163, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 184, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .form-control,
 .mdb-form-group.mdb-form-group-sm label,
 .mdb-form-group.mdb-form-group-sm input::-webkit-input-placeholder {
@@ -11534,7 +11648,7 @@ fieldset[disabled]
   line-height: 1;
 }
 
-/* line 169, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .radio label,
 .mdb-form-group.mdb-form-group-sm label.radio-inline,
 .mdb-form-group.mdb-form-group-sm .checkbox label,
@@ -11543,7 +11657,7 @@ fieldset[disabled]
   line-height: 1.5;
 }
 
-/* line 178, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 199, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm input::-webkit-input-placeholder {
   font-size: .875rem;
 }
@@ -11557,20 +11671,20 @@ fieldset[disabled]
   font-size: .875rem;
 }
 
-/* line 183, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 204, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .checkbox label,
 .mdb-form-group.mdb-form-group-sm .radio label,
 .mdb-form-group.mdb-form-group-sm label {
   font-size: .875rem;
 }
 
-/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 211, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .mdb-label-floating,
 .mdb-form-group.mdb-form-group-sm .mdb-label-placeholder {
   top: 1.65625rem;
 }
 
-/* line 201, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 222, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm.is-focused .mdb-label-floating,
 .mdb-form-group.mdb-form-group-sm .is-focused .mdb-label-floating, .mdb-form-group.mdb-form-group-sm.is-filled .mdb-label-floating,
 .mdb-form-group.mdb-form-group-sm .is-filled .mdb-label-floating {
@@ -11579,25 +11693,50 @@ fieldset[disabled]
   font-size: .65625rem;
 }
 
-/* line 207, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 228, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .mdb-label-static {
   top: .75rem;
   left: 0;
   font-size: .65625rem;
 }
 
-/* line 215, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 236, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .mdb-help {
   margin-top: 0;
   font-size: .65625rem;
 }
 
-/* line 174, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 243, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.mdb-form-group.mdb-form-group-sm .form-control.form-control-success, .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning, .mdb-form-group.mdb-form-group-sm .form-control.form-control-danger {
+  -webkit-background-size: 0 100%, 100% 100%, .89375rem .89375rem;
+          background-size: 0 100%, 100% 100%, .89375rem .89375rem;
+}
+
+/* line 250, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.mdb-form-group.mdb-form-group-sm .form-control.form-control-success, .mdb-form-group.mdb-form-group-sm .form-control.form-control-success:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-sm .form-control.form-control-success, .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning, .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning, .mdb-form-group.mdb-form-group-sm .form-control.form-control-danger, .mdb-form-group.mdb-form-group-sm .form-control.form-control-danger:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-sm .form-control.form-control-danger {
+  padding-right: 0;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center calc(100% - 1px), center right .34375rem;
+}
+
+/* line 258, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.mdb-form-group.mdb-form-group-sm .form-control.form-control-success:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-sm .form-control.form-control-success, .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning, .mdb-form-group.mdb-form-group-sm .form-control.form-control-danger:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-sm .form-control.form-control-danger {
+  -webkit-background-size: 100% 100%, 100% 100%, .89375rem .89375rem;
+          background-size: 100% 100%, 100% 100%, .89375rem .89375rem;
+}
+
+/* line 153, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 .mdb-form-group.mdb-form-group-lg {
   padding-top: 1.9375rem;
 }
 
-/* line 163, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 184, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .form-control,
 .mdb-form-group.mdb-form-group-lg label,
 .mdb-form-group.mdb-form-group-lg input::-webkit-input-placeholder {
@@ -11619,7 +11758,7 @@ fieldset[disabled]
   line-height: 1;
 }
 
-/* line 169, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .radio label,
 .mdb-form-group.mdb-form-group-lg label.radio-inline,
 .mdb-form-group.mdb-form-group-lg .checkbox label,
@@ -11628,7 +11767,7 @@ fieldset[disabled]
   line-height: 1.5;
 }
 
-/* line 178, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 199, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg input::-webkit-input-placeholder {
   font-size: 1.25rem;
 }
@@ -11642,20 +11781,20 @@ fieldset[disabled]
   font-size: 1.25rem;
 }
 
-/* line 183, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 204, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .checkbox label,
 .mdb-form-group.mdb-form-group-lg .radio label,
 .mdb-form-group.mdb-form-group-lg label {
   font-size: 1.25rem;
 }
 
-/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 211, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .mdb-label-floating,
 .mdb-form-group.mdb-form-group-lg .mdb-label-placeholder {
   top: 2.5rem;
 }
 
-/* line 201, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 222, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg.is-focused .mdb-label-floating,
 .mdb-form-group.mdb-form-group-lg .is-focused .mdb-label-floating, .mdb-form-group.mdb-form-group-lg.is-filled .mdb-label-floating,
 .mdb-form-group.mdb-form-group-lg .is-filled .mdb-label-floating {
@@ -11664,20 +11803,45 @@ fieldset[disabled]
   font-size: .9375rem;
 }
 
-/* line 207, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 228, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .mdb-label-static {
   top: 1rem;
   left: 0;
   font-size: .9375rem;
 }
 
-/* line 215, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 236, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .mdb-help {
   margin-top: 0;
   font-size: .9375rem;
 }
 
-/* line 152, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 243, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.mdb-form-group.mdb-form-group-lg .form-control.form-control-success, .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning, .mdb-form-group.mdb-form-group-lg .form-control.form-control-danger {
+  -webkit-background-size: 0 100%, 100% 100%, 1.54375rem 1.54375rem;
+          background-size: 0 100%, 100% 100%, 1.54375rem 1.54375rem;
+}
+
+/* line 250, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.mdb-form-group.mdb-form-group-lg .form-control.form-control-success, .mdb-form-group.mdb-form-group-lg .form-control.form-control-success:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-lg .form-control.form-control-success, .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning, .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning, .mdb-form-group.mdb-form-group-lg .form-control.form-control-danger, .mdb-form-group.mdb-form-group-lg .form-control.form-control-danger:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-lg .form-control.form-control-danger {
+  padding-right: 0;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center calc(100% - 1px), center right .59375rem;
+}
+
+/* line 258, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.mdb-form-group.mdb-form-group-lg .form-control.form-control-success:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-lg .form-control.form-control-success, .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning, .mdb-form-group.mdb-form-group-lg .form-control.form-control-danger:focus,
+.mdb-form-group.is-focused .mdb-form-group.mdb-form-group-lg .form-control.form-control-danger {
+  -webkit-background-size: 100% 100%, 100% 100%, 1.54375rem 1.54375rem;
+          background-size: 100% 100%, 100% 100%, 1.54375rem 1.54375rem;
+}
+
+/* line 173, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .radio,
 label.radio-inline,
 .checkbox,
@@ -11686,7 +11850,7 @@ label.checkbox-inline,
   padding-top: .5rem;
 }
 
-/* line 163, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 184, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .form-control,
 label,
 input::-webkit-input-placeholder {
@@ -11708,7 +11872,7 @@ input::placeholder {
   line-height: 1;
 }
 
-/* line 169, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .radio label,
 label.radio-inline,
 .checkbox label,
@@ -11717,7 +11881,7 @@ label.checkbox-inline,
   line-height: 1.5;
 }
 
-/* line 178, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 199, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 input::-webkit-input-placeholder {
   font-size: 1rem;
 }
@@ -11731,20 +11895,20 @@ input::placeholder {
   font-size: 1rem;
 }
 
-/* line 183, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 204, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .checkbox label,
 .radio label,
 label {
   font-size: 1rem;
 }
 
-/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 211, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-label-floating,
 .mdb-label-placeholder {
   top: 2.1875rem;
 }
 
-/* line 201, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 222, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .is-focused .mdb-label-floating,
 .is-focused .mdb-label-floating,
 .is-filled .mdb-label-floating,
@@ -11754,20 +11918,45 @@ label {
   font-size: .75rem;
 }
 
-/* line 207, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 228, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-label-static {
   top: 1rem;
   left: 0;
   font-size: .75rem;
 }
 
-/* line 215, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 236, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-help {
   margin-top: 0;
   font-size: .75rem;
 }
 
-/* line 183, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
+/* line 243, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.form-control.form-control-success, .form-control.form-control-warning, .form-control.form-control-danger {
+  -webkit-background-size: 0 100%, 100% 100%, 1.21875rem 1.21875rem;
+          background-size: 0 100%, 100% 100%, 1.21875rem 1.21875rem;
+}
+
+/* line 250, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.form-control.form-control-success, .form-control.form-control-success:focus,
+.mdb-form-group.is-focused .form-control.form-control-success, .form-control.form-control-warning, .form-control.form-control-warning:focus,
+.mdb-form-group.is-focused .form-control.form-control-warning, .form-control.form-control-danger, .form-control.form-control-danger:focus,
+.mdb-form-group.is-focused .form-control.form-control-danger {
+  padding-right: 0;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center calc(100% - 1px), center right .46875rem;
+}
+
+/* line 258, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+.form-control.form-control-success:focus,
+.mdb-form-group.is-focused .form-control.form-control-success, .form-control.form-control-warning:focus,
+.mdb-form-group.is-focused .form-control.form-control-warning, .form-control.form-control-danger:focus,
+.mdb-form-group.is-focused .form-control.form-control-danger {
+  -webkit-background-size: 100% 100%, 100% 100%, 1.21875rem 1.21875rem;
+          background-size: 100% 100%, 100% 100%, 1.21875rem 1.21875rem;
+}
+
+/* line 162, /Users/kross/projects/bootstrap-material-design/scss/_forms.scss */
 select, select.form-control {
   -webkit-appearance: none;
 
