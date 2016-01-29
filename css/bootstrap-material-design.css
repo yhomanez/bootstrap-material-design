@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css commit fe56763 | MIT License | github.com/necolas/normalize.css */
 /* line 9, node_modules/bootstrap/scss/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -19,7 +19,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 menu,
 nav,
@@ -28,7 +27,7 @@ summary {
   display: block;
 }
 
-/* line 54, node_modules/bootstrap/scss/_normalize.scss */
+/* line 53, node_modules/bootstrap/scss/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -37,67 +36,67 @@ video {
   vertical-align: baseline;
 }
 
-/* line 67, node_modules/bootstrap/scss/_normalize.scss */
+/* line 66, node_modules/bootstrap/scss/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 77, node_modules/bootstrap/scss/_normalize.scss */
+/* line 76, node_modules/bootstrap/scss/_normalize.scss */
 [hidden],
 template {
   display: none;
 }
 
-/* line 89, node_modules/bootstrap/scss/_normalize.scss */
+/* line 88, node_modules/bootstrap/scss/_normalize.scss */
 a {
   background-color: transparent;
 }
 
-/* line 99, node_modules/bootstrap/scss/_normalize.scss */
+/* line 98, node_modules/bootstrap/scss/_normalize.scss */
 a:active {
   outline: 0;
 }
 
-/* line 102, node_modules/bootstrap/scss/_normalize.scss */
+/* line 101, node_modules/bootstrap/scss/_normalize.scss */
 a:hover {
   outline: 0;
 }
 
-/* line 114, node_modules/bootstrap/scss/_normalize.scss */
+/* line 113, node_modules/bootstrap/scss/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 122, node_modules/bootstrap/scss/_normalize.scss */
+/* line 121, node_modules/bootstrap/scss/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 131, node_modules/bootstrap/scss/_normalize.scss */
+/* line 130, node_modules/bootstrap/scss/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 140, node_modules/bootstrap/scss/_normalize.scss */
+/* line 139, node_modules/bootstrap/scss/_normalize.scss */
 h1 {
   margin: .67em 0;
   font-size: 2em;
 }
 
-/* line 149, node_modules/bootstrap/scss/_normalize.scss */
+/* line 148, node_modules/bootstrap/scss/_normalize.scss */
 mark {
   color: #000;
   background: #ff0;
 }
 
-/* line 158, node_modules/bootstrap/scss/_normalize.scss */
+/* line 157, node_modules/bootstrap/scss/_normalize.scss */
 small {
   font-size: 80%;
 }
 
-/* line 166, node_modules/bootstrap/scss/_normalize.scss */
+/* line 165, node_modules/bootstrap/scss/_normalize.scss */
 sub,
 sup {
   position: relative;
@@ -106,44 +105,44 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 174, node_modules/bootstrap/scss/_normalize.scss */
+/* line 173, node_modules/bootstrap/scss/_normalize.scss */
 sup {
   top: -.5em;
 }
 
-/* line 178, node_modules/bootstrap/scss/_normalize.scss */
+/* line 177, node_modules/bootstrap/scss/_normalize.scss */
 sub {
   bottom: -.25em;
 }
 
-/* line 189, node_modules/bootstrap/scss/_normalize.scss */
+/* line 188, node_modules/bootstrap/scss/_normalize.scss */
 img {
   border: 0;
 }
 
-/* line 197, node_modules/bootstrap/scss/_normalize.scss */
+/* line 196, node_modules/bootstrap/scss/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 208, node_modules/bootstrap/scss/_normalize.scss */
+/* line 207, node_modules/bootstrap/scss/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
 
-/* line 216, node_modules/bootstrap/scss/_normalize.scss */
+/* line 215, node_modules/bootstrap/scss/_normalize.scss */
 hr {
   height: 0;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
 
-/* line 225, node_modules/bootstrap/scss/_normalize.scss */
+/* line 224, node_modules/bootstrap/scss/_normalize.scss */
 pre {
   overflow: auto;
 }
 
-/* line 233, node_modules/bootstrap/scss/_normalize.scss */
+/* line 232, node_modules/bootstrap/scss/_normalize.scss */
 code,
 kbd,
 pre,
@@ -152,7 +151,7 @@ samp {
   font-size: 1em;
 }
 
-/* line 256, node_modules/bootstrap/scss/_normalize.scss */
+/* line 255, node_modules/bootstrap/scss/_normalize.scss */
 button,
 input,
 optgroup,
@@ -163,18 +162,18 @@ textarea {
   color: inherit;
 }
 
-/* line 270, node_modules/bootstrap/scss/_normalize.scss */
+/* line 269, node_modules/bootstrap/scss/_normalize.scss */
 button {
   overflow: visible;
 }
 
-/* line 281, node_modules/bootstrap/scss/_normalize.scss */
+/* line 280, node_modules/bootstrap/scss/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 294, node_modules/bootstrap/scss/_normalize.scss */
+/* line 293, node_modules/bootstrap/scss/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -183,25 +182,25 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 306, node_modules/bootstrap/scss/_normalize.scss */
+/* line 305, node_modules/bootstrap/scss/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 315, node_modules/bootstrap/scss/_normalize.scss */
+/* line 314, node_modules/bootstrap/scss/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 326, node_modules/bootstrap/scss/_normalize.scss */
+/* line 325, node_modules/bootstrap/scss/_normalize.scss */
 input {
   line-height: normal;
 }
 
-/* line 338, node_modules/bootstrap/scss/_normalize.scss */
+/* line 337, node_modules/bootstrap/scss/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -209,133 +208,129 @@ input[type="radio"] {
   padding: 0;
 }
 
-/* line 350, node_modules/bootstrap/scss/_normalize.scss */
+/* line 349, node_modules/bootstrap/scss/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 360, node_modules/bootstrap/scss/_normalize.scss */
+/* line 358, node_modules/bootstrap/scss/_normalize.scss */
 input[type="search"] {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
   -webkit-appearance: textfield;
 }
 
-/* line 371, node_modules/bootstrap/scss/_normalize.scss */
+/* line 368, node_modules/bootstrap/scss/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 380, node_modules/bootstrap/scss/_normalize.scss */
+/* line 377, node_modules/bootstrap/scss/_normalize.scss */
 fieldset {
   padding: .35em .625em .75em;
   margin: 0 2px;
   border: 1px solid #c0c0c0;
 }
 
-/* line 391, node_modules/bootstrap/scss/_normalize.scss */
+/* line 388, node_modules/bootstrap/scss/_normalize.scss */
 legend {
   padding: 0;
   border: 0;
 }
 
-/* line 400, node_modules/bootstrap/scss/_normalize.scss */
+/* line 397, node_modules/bootstrap/scss/_normalize.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 409, node_modules/bootstrap/scss/_normalize.scss */
+/* line 406, node_modules/bootstrap/scss/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
 
-/* line 420, node_modules/bootstrap/scss/_normalize.scss */
+/* line 417, node_modules/bootstrap/scss/_normalize.scss */
 table {
   border-spacing: 0;
   border-collapse: collapse;
 }
 
-/* line 425, node_modules/bootstrap/scss/_normalize.scss */
+/* line 422, node_modules/bootstrap/scss/_normalize.scss */
 td,
 th {
   padding: 0;
 }
 
 @media print {
-  /* line 9, node_modules/bootstrap/scss/_print.scss */
+  /* line 10, node_modules/bootstrap/scss/_print.scss */
   *,
   *::before,
-  *::after {
+  *::after,
+  *::first-letter,
+  *::first-line {
     text-shadow: none !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
-  /* line 16, node_modules/bootstrap/scss/_print.scss */
+  /* line 23, node_modules/bootstrap/scss/_print.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
-  /* line 21, node_modules/bootstrap/scss/_print.scss */
+  /* line 33, node_modules/bootstrap/scss/_print.scss */
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
-  /* line 25, node_modules/bootstrap/scss/_print.scss */
+  /* line 48, node_modules/bootstrap/scss/_print.scss */
   pre,
   blockquote {
     border: 1px solid #999;
 
     page-break-inside: avoid;
   }
-  /* line 31, node_modules/bootstrap/scss/_print.scss */
+  /* line 59, node_modules/bootstrap/scss/_print.scss */
   thead {
     display: table-header-group;
   }
-  /* line 35, node_modules/bootstrap/scss/_print.scss */
+  /* line 63, node_modules/bootstrap/scss/_print.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
-  /* line 40, node_modules/bootstrap/scss/_print.scss */
-  img {
-    max-width: 100% !important;
-  }
-  /* line 44, node_modules/bootstrap/scss/_print.scss */
+  /* line 68, node_modules/bootstrap/scss/_print.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
-  /* line 51, node_modules/bootstrap/scss/_print.scss */
+  /* line 75, node_modules/bootstrap/scss/_print.scss */
   h2,
   h3 {
     page-break-after: avoid;
   }
-  /* line 59, node_modules/bootstrap/scss/_print.scss */
+  /* line 83, node_modules/bootstrap/scss/_print.scss */
   .navbar {
     display: none;
   }
-  /* line 64, node_modules/bootstrap/scss/_print.scss */
+  /* line 88, node_modules/bootstrap/scss/_print.scss */
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
   }
-  /* line 68, node_modules/bootstrap/scss/_print.scss */
+  /* line 92, node_modules/bootstrap/scss/_print.scss */
   .label {
     border: 1px solid #000;
   }
-  /* line 72, node_modules/bootstrap/scss/_print.scss */
+  /* line 96, node_modules/bootstrap/scss/_print.scss */
   .table {
     border-collapse: collapse !important;
   }
-  /* line 75, node_modules/bootstrap/scss/_print.scss */
+  /* line 99, node_modules/bootstrap/scss/_print.scss */
   .table td,
   .table th {
     background-color: #fff !important;
   }
-  /* line 81, node_modules/bootstrap/scss/_print.scss */
+  /* line 105, node_modules/bootstrap/scss/_print.scss */
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important;
@@ -572,17 +567,15 @@ legend {
 
 /* line 333, node_modules/bootstrap/scss/_reboot.scss */
 input[type="search"] {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
   -webkit-appearance: none;
 }
 
-/* line 344, node_modules/bootstrap/scss/_reboot.scss */
+/* line 342, node_modules/bootstrap/scss/_reboot.scss */
 output {
   display: inline-block;
 }
 
-/* line 352, node_modules/bootstrap/scss/_reboot.scss */
+/* line 350, node_modules/bootstrap/scss/_reboot.scss */
 [hidden] {
   display: none !important;
 }
@@ -2948,7 +2941,7 @@ pre code {
   margin-bottom: 0;
 }
 
-/* line 102, node_modules/bootstrap/scss/_forms.scss */
+/* line 100, node_modules/bootstrap/scss/_forms.scss */
 _::-webkit-full-page-media.form-control,
 input[type="date"].form-control,
 input[type="time"].form-control,
@@ -2957,7 +2950,7 @@ input[type="month"].form-control {
   line-height: 2.375rem;
 }
 
-/* line 106, node_modules/bootstrap/scss/_forms.scss */
+/* line 104, node_modules/bootstrap/scss/_forms.scss */
 _::-webkit-full-page-media.input-sm,
 .input-group-sm _::-webkit-full-page-media.form-control,
 input[type="date"].input-sm,
@@ -2975,7 +2968,7 @@ input[type="month"].form-control {
   line-height: 1.8125rem;
 }
 
-/* line 111, node_modules/bootstrap/scss/_forms.scss */
+/* line 109, node_modules/bootstrap/scss/_forms.scss */
 _::-webkit-full-page-media.input-lg,
 .input-group-lg _::-webkit-full-page-media.form-control,
 input[type="date"].input-lg,
@@ -2993,7 +2986,7 @@ input[type="month"].form-control {
   line-height: 2.791667rem;
 }
 
-/* line 124, node_modules/bootstrap/scss/_forms.scss */
+/* line 121, node_modules/bootstrap/scss/_forms.scss */
 .form-control-static {
   min-height: 2.375rem;
   padding-top: .4375rem;
@@ -3001,7 +2994,7 @@ input[type="month"].form-control {
   margin-bottom: 0;
 }
 
-/* line 132, node_modules/bootstrap/scss/_forms.scss */
+/* line 129, node_modules/bootstrap/scss/_forms.scss */
 .form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control,
 .input-group-sm > .form-control-static.input-group-addon,
 .input-group-sm > .input-group-btn > .form-control-static.btn, .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control,
@@ -3011,7 +3004,7 @@ input[type="month"].form-control {
   padding-left: 0;
 }
 
-/* line 148, node_modules/bootstrap/scss/_forms.scss */
+/* line 145, node_modules/bootstrap/scss/_forms.scss */
 .form-control-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
@@ -3021,7 +3014,7 @@ input[type="month"].form-control {
   border-radius: .0625rem;
 }
 
-/* line 156, node_modules/bootstrap/scss/_forms.scss */
+/* line 153, node_modules/bootstrap/scss/_forms.scss */
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
@@ -3031,12 +3024,12 @@ input[type="month"].form-control {
   border-radius: .3rem;
 }
 
-/* line 170, node_modules/bootstrap/scss/_forms.scss */
+/* line 167, node_modules/bootstrap/scss/_forms.scss */
 .form-group {
   margin-bottom: .5rem;
 }
 
-/* line 179, node_modules/bootstrap/scss/_forms.scss */
+/* line 176, node_modules/bootstrap/scss/_forms.scss */
 .radio,
 .checkbox {
   position: relative;
@@ -3044,7 +3037,7 @@ input[type="month"].form-control {
   margin-bottom: .375rem;
 }
 
-/* line 186, node_modules/bootstrap/scss/_forms.scss */
+/* line 183, node_modules/bootstrap/scss/_forms.scss */
 .radio label,
 .checkbox label {
   padding-left: 1.25rem;
@@ -3052,13 +3045,13 @@ input[type="month"].form-control {
   cursor: pointer;
 }
 
-/* line 192, node_modules/bootstrap/scss/_forms.scss */
+/* line 189, node_modules/bootstrap/scss/_forms.scss */
 .radio label input:only-child,
 .checkbox label input:only-child {
   position: static;
 }
 
-/* line 197, node_modules/bootstrap/scss/_forms.scss */
+/* line 194, node_modules/bootstrap/scss/_forms.scss */
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
@@ -3068,13 +3061,13 @@ input[type="month"].form-control {
   margin-left: -1.25rem;
 }
 
-/* line 207, node_modules/bootstrap/scss/_forms.scss */
+/* line 204, node_modules/bootstrap/scss/_forms.scss */
 .radio + .radio,
 .checkbox + .checkbox {
   margin-top: -.25rem;
 }
 
-/* line 214, node_modules/bootstrap/scss/_forms.scss */
+/* line 211, node_modules/bootstrap/scss/_forms.scss */
 .radio-inline,
 .checkbox-inline {
   position: relative;
@@ -3085,33 +3078,33 @@ input[type="month"].form-control {
   cursor: pointer;
 }
 
-/* line 223, node_modules/bootstrap/scss/_forms.scss */
+/* line 220, node_modules/bootstrap/scss/_forms.scss */
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
   margin-left: .75rem;
 }
 
-/* line 235, node_modules/bootstrap/scss/_forms.scss */
+/* line 232, node_modules/bootstrap/scss/_forms.scss */
 input[type="radio"]:disabled, input[type="radio"].disabled,
 input[type="checkbox"]:disabled,
 input[type="checkbox"].disabled {
   cursor: not-allowed;
 }
 
-/* line 243, node_modules/bootstrap/scss/_forms.scss */
+/* line 240, node_modules/bootstrap/scss/_forms.scss */
 .radio-inline.disabled,
 .checkbox-inline.disabled {
   cursor: not-allowed;
 }
 
-/* line 251, node_modules/bootstrap/scss/_forms.scss */
+/* line 248, node_modules/bootstrap/scss/_forms.scss */
 .radio.disabled label,
 .checkbox.disabled label {
   cursor: not-allowed;
 }
 
-/* line 262, node_modules/bootstrap/scss/_forms.scss */
+/* line 259, node_modules/bootstrap/scss/_forms.scss */
 .form-control-success,
 .form-control-warning,
 .form-control-danger {
@@ -3153,7 +3146,7 @@ input[type="checkbox"].disabled {
   color: #4caf50;
 }
 
-/* line 275, node_modules/bootstrap/scss/_forms.scss */
+/* line 272, node_modules/bootstrap/scss/_forms.scss */
 .has-success .form-control-success {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==");
 }
@@ -3189,7 +3182,7 @@ input[type="checkbox"].disabled {
   color: #ff5722;
 }
 
-/* line 283, node_modules/bootstrap/scss/_forms.scss */
+/* line 280, node_modules/bootstrap/scss/_forms.scss */
 .has-warning .form-control-warning {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+");
 }
@@ -3225,49 +3218,49 @@ input[type="checkbox"].disabled {
   color: #f44336;
 }
 
-/* line 291, node_modules/bootstrap/scss/_forms.scss */
+/* line 288, node_modules/bootstrap/scss/_forms.scss */
 .has-danger .form-control-danger {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=");
 }
 
 @media (min-width: 544px) {
-  /* line 389, node_modules/bootstrap/scss/_forms.scss */
+  /* line 386, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 396, node_modules/bootstrap/scss/_forms.scss */
+  /* line 393, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  /* line 403, node_modules/bootstrap/scss/_forms.scss */
+  /* line 400, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .form-control-static {
     display: inline-block;
   }
-  /* line 407, node_modules/bootstrap/scss/_forms.scss */
+  /* line 404, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .input-group {
     display: inline-table;
     vertical-align: middle;
   }
-  /* line 411, node_modules/bootstrap/scss/_forms.scss */
+  /* line 408, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .input-group .input-group-addon,
   .form-inline .input-group .input-group-btn,
   .form-inline .input-group .form-control {
     width: auto;
   }
-  /* line 419, node_modules/bootstrap/scss/_forms.scss */
+  /* line 416, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .input-group > .form-control {
     width: 100%;
   }
-  /* line 423, node_modules/bootstrap/scss/_forms.scss */
+  /* line 420, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .form-control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 430, node_modules/bootstrap/scss/_forms.scss */
+  /* line 427, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .radio,
   .form-inline .checkbox {
     display: inline-block;
@@ -3275,18 +3268,18 @@ input[type="checkbox"].disabled {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 437, node_modules/bootstrap/scss/_forms.scss */
+  /* line 434, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .radio label,
   .form-inline .checkbox label {
     padding-left: 0;
   }
-  /* line 441, node_modules/bootstrap/scss/_forms.scss */
+  /* line 438, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .radio input[type="radio"],
   .form-inline .checkbox input[type="checkbox"] {
     position: relative;
     margin-left: 0;
   }
-  /* line 448, node_modules/bootstrap/scss/_forms.scss */
+  /* line 445, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .has-feedback .form-control-feedback {
     top: 0;
   }
@@ -4438,6 +4431,7 @@ input[type="button"].btn-block {
 /* line 86, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-addon {
   padding: .4375rem 0;
+  margin-bottom: 0;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -4448,7 +4442,7 @@ input[type="button"].btn-block {
   border-radius: .125rem;
 }
 
-/* line 98, node_modules/bootstrap/scss/_input-group.scss */
+/* line 99, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-addon.form-control-sm,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn {
@@ -4457,7 +4451,7 @@ input[type="button"].btn-block {
   border-radius: .0625rem;
 }
 
-/* line 103, node_modules/bootstrap/scss/_input-group.scss */
+/* line 104, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-addon.form-control-lg,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn {
@@ -4466,13 +4460,13 @@ input[type="button"].btn-block {
   border-radius: .3rem;
 }
 
-/* line 110, node_modules/bootstrap/scss/_input-group.scss */
+/* line 111, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-addon input[type="radio"],
 .input-group-addon input[type="checkbox"] {
   margin-top: 0;
 }
 
-/* line 121, node_modules/bootstrap/scss/_input-group.scss */
+/* line 122, node_modules/bootstrap/scss/_input-group.scss */
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
@@ -4484,12 +4478,12 @@ input[type="button"].btn-block {
   border-bottom-right-radius: 0;
 }
 
-/* line 130, node_modules/bootstrap/scss/_input-group.scss */
+/* line 131, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-addon:first-child {
   border-right: 0;
 }
 
-/* line 133, node_modules/bootstrap/scss/_input-group.scss */
+/* line 134, node_modules/bootstrap/scss/_input-group.scss */
 .input-group .form-control:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
@@ -4501,24 +4495,24 @@ input[type="button"].btn-block {
   border-bottom-left-radius: 0;
 }
 
-/* line 142, node_modules/bootstrap/scss/_input-group.scss */
+/* line 143, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-addon:last-child {
   border-left: 0;
 }
 
-/* line 151, node_modules/bootstrap/scss/_input-group.scss */
+/* line 152, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-btn {
   position: relative;
   font-size: 0;
   white-space: nowrap;
 }
 
-/* line 160, node_modules/bootstrap/scss/_input-group.scss */
+/* line 161, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-btn > .btn {
   position: relative;
 }
 
-/* line 162, node_modules/bootstrap/scss/_input-group.scss */
+/* line 163, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-btn > .btn + .btn {
   margin-left: -1px;
 }
@@ -4528,13 +4522,13 @@ input[type="button"].btn-block {
   z-index: 3;
 }
 
-/* line 173, node_modules/bootstrap/scss/_input-group.scss */
+/* line 174, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
 
-/* line 179, node_modules/bootstrap/scss/_input-group.scss */
+/* line 180, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .btn-group {
   z-index: 2;
@@ -4936,32 +4930,14 @@ input[type="button"].btn-block {
 /* line 6, node_modules/bootstrap/scss/_navbar.scss */
 .navbar {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
   padding: .25rem .5rem;
-
-  -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-          flex-shrink: 0;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-          align-items: center;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-          align-self: stretch;
 }
 
-/* line 17, node_modules/bootstrap/scss/_navbar.scss */
-.navbar > * {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-          flex-shrink: 0;
+/* line 2, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_clearfix.scss */
+.navbar::after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 @media (min-width: 544px) {
@@ -4971,19 +4947,19 @@ input[type="button"].btn-block {
   }
 }
 
-/* line 36, node_modules/bootstrap/scss/_navbar.scss */
+/* line 23, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-full {
   z-index: 1000;
 }
 
 @media (min-width: 544px) {
-  /* line 36, node_modules/bootstrap/scss/_navbar.scss */
+  /* line 23, node_modules/bootstrap/scss/_navbar.scss */
   .navbar-full {
     border-radius: 0;
   }
 }
 
-/* line 45, node_modules/bootstrap/scss/_navbar.scss */
+/* line 32, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
@@ -4993,24 +4969,24 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 544px) {
-  /* line 45, node_modules/bootstrap/scss/_navbar.scss */
+  /* line 32, node_modules/bootstrap/scss/_navbar.scss */
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
   }
 }
 
-/* line 58, node_modules/bootstrap/scss/_navbar.scss */
+/* line 45, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-fixed-top {
   top: 0;
 }
 
-/* line 62, node_modules/bootstrap/scss/_navbar.scss */
+/* line 49, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-fixed-bottom {
   bottom: 0;
 }
 
-/* line 66, node_modules/bootstrap/scss/_navbar.scss */
+/* line 53, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-sticky-top {
   position: -webkit-sticky;
   position:         sticky;
@@ -5020,13 +4996,13 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 544px) {
-  /* line 66, node_modules/bootstrap/scss/_navbar.scss */
+  /* line 53, node_modules/bootstrap/scss/_navbar.scss */
   .navbar-sticky-top {
     border-radius: 0;
   }
 }
 
-/* line 83, node_modules/bootstrap/scss/_navbar.scss */
+/* line 70, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-brand {
   float: left;
   padding-top: .25rem;
@@ -5040,12 +5016,12 @@ input[type="button"].btn-block {
   text-decoration: none;
 }
 
-/* line 94, node_modules/bootstrap/scss/_navbar.scss */
+/* line 81, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-brand > img {
   display: block;
 }
 
-/* line 100, node_modules/bootstrap/scss/_navbar.scss */
+/* line 87, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-divider {
   float: left;
   width: 1px;
@@ -5056,12 +5032,12 @@ input[type="button"].btn-block {
   overflow: hidden;
 }
 
-/* line 109, node_modules/bootstrap/scss/_navbar.scss */
+/* line 96, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-divider::before {
   content: "\00a0";
 }
 
-/* line 120, node_modules/bootstrap/scss/_navbar.scss */
+/* line 107, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-toggler {
   padding: .5rem .75rem;
   font-size: 1.25rem;
@@ -5077,49 +5053,49 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 544px) {
-  /* line 135, node_modules/bootstrap/scss/_navbar.scss */
+  /* line 122, node_modules/bootstrap/scss/_navbar.scss */
   .navbar-toggleable-xs {
     display: block !important;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 140, node_modules/bootstrap/scss/_navbar.scss */
+  /* line 127, node_modules/bootstrap/scss/_navbar.scss */
   .navbar-toggleable-sm {
     display: block !important;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 145, node_modules/bootstrap/scss/_navbar.scss */
+  /* line 132, node_modules/bootstrap/scss/_navbar.scss */
   .navbar-toggleable-md {
     display: block !important;
   }
 }
 
-/* line 158, node_modules/bootstrap/scss/_navbar.scss */
+/* line 145, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-nav .nav-item {
   float: left;
 }
 
-/* line 162, node_modules/bootstrap/scss/_navbar.scss */
+/* line 149, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-nav .nav-link {
   display: block;
   padding-top: .425rem;
   padding-bottom: .425rem;
 }
 
-/* line 167, node_modules/bootstrap/scss/_navbar.scss */
+/* line 154, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-nav .nav-link + .nav-link {
   margin-left: 1rem;
 }
 
-/* line 172, node_modules/bootstrap/scss/_navbar.scss */
+/* line 159, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-nav .nav-item + .nav-item {
   margin-left: 1rem;
 }
 
-/* line 179, node_modules/bootstrap/scss/_navbar.scss */
+/* line 166, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-light .navbar-brand {
   color: rgba(0, 0, 0, .8);
 }
@@ -5129,7 +5105,7 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, .8);
 }
 
-/* line 188, node_modules/bootstrap/scss/_navbar.scss */
+/* line 175, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, .3);
 }
@@ -5153,12 +5129,12 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, .8);
 }
 
-/* line 206, node_modules/bootstrap/scss/_navbar.scss */
+/* line 193, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-light .navbar-divider {
   background-color: rgba(0, 0, 0, .075);
 }
 
-/* line 213, node_modules/bootstrap/scss/_navbar.scss */
+/* line 200, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-dark .navbar-brand {
   color: white;
 }
@@ -5168,7 +5144,7 @@ input[type="button"].btn-block {
   color: white;
 }
 
-/* line 222, node_modules/bootstrap/scss/_navbar.scss */
+/* line 209, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, .5);
 }
@@ -5192,7 +5168,7 @@ input[type="button"].btn-block {
   color: white;
 }
 
-/* line 240, node_modules/bootstrap/scss/_navbar.scss */
+/* line 227, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-dark .navbar-divider {
   background-color: rgba(255, 255, 255, .075);
 }
@@ -6227,71 +6203,50 @@ base::-moz-progress-bar,
 
 /* line 5, node_modules/bootstrap/scss/_list-group.scss */
 .list-group {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
   padding-left: 0;
   margin-bottom: 0;
-          flex-direction: column;
-
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
 }
 
-/* line 21, node_modules/bootstrap/scss/_list-group.scss */
+/* line 16, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-item {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+  display: block;
   padding: .75rem 1.25rem;
   margin-bottom: 0;
   background-color: inherit;
   border: 0 solid #ddd;
-
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-          align-items: center;
 }
 
-/* line 37, node_modules/bootstrap/scss/_list-group.scss */
+/* line 26, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-item:first-child {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-/* line 40, node_modules/bootstrap/scss/_list-group.scss */
+/* line 29, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-item:last-child {
   margin-bottom: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-/* line 47, node_modules/bootstrap/scss/_list-group.scss */
+/* line 36, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-flush .list-group-item {
   border-width: 0 0;
   border-radius: 0;
 }
 
-/* line 53, node_modules/bootstrap/scss/_list-group.scss */
+/* line 42, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-flush:first-child .list-group-item:first-child {
   border-top: 0;
 }
 
-/* line 59, node_modules/bootstrap/scss/_list-group.scss */
+/* line 48, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-flush:last-child .list-group-item:last-child {
   border-bottom: 0;
 }
 
-/* line 71, node_modules/bootstrap/scss/_list-group.scss */
+/* line 60, node_modules/bootstrap/scss/_list-group.scss */
 a.list-group-item,
 button.list-group-item {
   width: 100%;
@@ -6299,7 +6254,7 @@ button.list-group-item {
   text-align: inherit;
 }
 
-/* line 77, node_modules/bootstrap/scss/_list-group.scss */
+/* line 66, node_modules/bootstrap/scss/_list-group.scss */
 a.list-group-item .list-group-item-heading,
 button.list-group-item .list-group-item-heading {
   color: #333;
@@ -6321,12 +6276,12 @@ button.list-group-item:hover {
   background-color: rgba(0, 0, 0, .12);
 }
 
-/* line 98, node_modules/bootstrap/scss/_list-group.scss */
+/* line 87, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading {
   color: inherit;
 }
 
-/* line 101, node_modules/bootstrap/scss/_list-group.scss */
+/* line 90, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-item.disabled .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text {
   color: rgba(0, 0, 0, .26);
 }
@@ -6339,7 +6294,7 @@ button.list-group-item:hover {
   border-color: #009688;
 }
 
-/* line 116, node_modules/bootstrap/scss/_list-group.scss */
+/* line 105, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active .list-group-item-heading > small,
 .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading,
@@ -6350,7 +6305,7 @@ button.list-group-item:hover {
   color: inherit;
 }
 
-/* line 121, node_modules/bootstrap/scss/_list-group.scss */
+/* line 110, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-item.active .list-group-item-text, .list-group-item.active:focus .list-group-item-text, .list-group-item.active:hover .list-group-item-text {
   color: #63fff0;
 }
@@ -6499,13 +6454,13 @@ button.list-group-item-danger.active:hover {
   border-color: rgba(255, 255, 255, .84);
 }
 
-/* line 144, node_modules/bootstrap/scss/_list-group.scss */
+/* line 133, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-item-heading {
   margin-top: 0;
   margin-bottom: 5px;
 }
 
-/* line 148, node_modules/bootstrap/scss/_list-group.scss */
+/* line 137, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-item-text {
   margin-bottom: 0;
   line-height: 1.3;
@@ -6781,25 +6736,25 @@ button.close {
   letter-spacing: normal;
   word-break: normal;
   word-spacing: normal;
-  word-wrap: normal;
+  word-wrap: break-word;
   white-space: normal;
   opacity: 0;
 
   line-break: auto;
 }
 
-/* line 12, node_modules/bootstrap/scss/_tooltip.scss */
+/* line 14, node_modules/bootstrap/scss/_tooltip.scss */
 .tooltip.in {
   opacity: .9;
 }
 
-/* line 14, node_modules/bootstrap/scss/_tooltip.scss */
+/* line 16, node_modules/bootstrap/scss/_tooltip.scss */
 .tooltip.tooltip-top, .tooltip.bs-tether-element-attached-bottom {
   padding: 5px 0;
   margin-top: -3px;
 }
 
-/* line 19, node_modules/bootstrap/scss/_tooltip.scss */
+/* line 21, node_modules/bootstrap/scss/_tooltip.scss */
 .tooltip.tooltip-top .tooltip-arrow, .tooltip.bs-tether-element-attached-bottom .tooltip-arrow {
   bottom: 0;
   left: 50%;
@@ -6808,13 +6763,13 @@ button.close {
   border-top-color: #000;
 }
 
-/* line 27, node_modules/bootstrap/scss/_tooltip.scss */
+/* line 29, node_modules/bootstrap/scss/_tooltip.scss */
 .tooltip.tooltip-right, .tooltip.bs-tether-element-attached-left {
   padding: 0 5px;
   margin-left: 3px;
 }
 
-/* line 32, node_modules/bootstrap/scss/_tooltip.scss */
+/* line 34, node_modules/bootstrap/scss/_tooltip.scss */
 .tooltip.tooltip-right .tooltip-arrow, .tooltip.bs-tether-element-attached-left .tooltip-arrow {
   top: 50%;
   left: 0;
@@ -6823,13 +6778,13 @@ button.close {
   border-right-color: #000;
 }
 
-/* line 40, node_modules/bootstrap/scss/_tooltip.scss */
+/* line 42, node_modules/bootstrap/scss/_tooltip.scss */
 .tooltip.tooltip-bottom, .tooltip.bs-tether-element-attached-top {
   padding: 5px 0;
   margin-top: 3px;
 }
 
-/* line 45, node_modules/bootstrap/scss/_tooltip.scss */
+/* line 47, node_modules/bootstrap/scss/_tooltip.scss */
 .tooltip.tooltip-bottom .tooltip-arrow, .tooltip.bs-tether-element-attached-top .tooltip-arrow {
   top: 0;
   left: 50%;
@@ -6838,13 +6793,13 @@ button.close {
   border-bottom-color: #000;
 }
 
-/* line 53, node_modules/bootstrap/scss/_tooltip.scss */
+/* line 55, node_modules/bootstrap/scss/_tooltip.scss */
 .tooltip.tooltip-left, .tooltip.bs-tether-element-attached-right {
   padding: 0 5px;
   margin-left: -3px;
 }
 
-/* line 58, node_modules/bootstrap/scss/_tooltip.scss */
+/* line 60, node_modules/bootstrap/scss/_tooltip.scss */
 .tooltip.tooltip-left .tooltip-arrow, .tooltip.bs-tether-element-attached-right .tooltip-arrow {
   top: 50%;
   right: 0;
@@ -6853,7 +6808,7 @@ button.close {
   border-left-color: #000;
 }
 
-/* line 69, node_modules/bootstrap/scss/_tooltip.scss */
+/* line 71, node_modules/bootstrap/scss/_tooltip.scss */
 .tooltip-inner {
   max-width: 200px;
   padding: 3px 8px;
@@ -6863,7 +6818,7 @@ button.close {
   border-radius: .125rem;
 }
 
-/* line 79, node_modules/bootstrap/scss/_tooltip.scss */
+/* line 81, node_modules/bootstrap/scss/_tooltip.scss */
 .tooltip-arrow {
   position: absolute;
   width: 0;
@@ -6894,7 +6849,7 @@ button.close {
   letter-spacing: normal;
   word-break: normal;
   word-spacing: normal;
-  word-wrap: normal;
+  word-wrap: break-word;
   white-space: normal;
   background-color: #fff;
   -webkit-background-clip: padding-box;
@@ -6907,12 +6862,12 @@ button.close {
   line-break: auto;
 }
 
-/* line 22, node_modules/bootstrap/scss/_popover.scss */
+/* line 24, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-top, .popover.bs-tether-element-attached-bottom {
   margin-top: -10px;
 }
 
-/* line 26, node_modules/bootstrap/scss/_popover.scss */
+/* line 28, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-top .popover-arrow, .popover.bs-tether-element-attached-bottom .popover-arrow {
   bottom: -11px;
   left: 50%;
@@ -6921,7 +6876,7 @@ button.close {
   border-bottom-width: 0;
 }
 
-/* line 32, node_modules/bootstrap/scss/_popover.scss */
+/* line 34, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-top .popover-arrow::after, .popover.bs-tether-element-attached-bottom .popover-arrow::after {
   bottom: 1px;
   margin-left: -10px;
@@ -6930,12 +6885,12 @@ button.close {
   border-bottom-width: 0;
 }
 
-/* line 42, node_modules/bootstrap/scss/_popover.scss */
+/* line 44, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-right, .popover.bs-tether-element-attached-left {
   margin-left: 10px;
 }
 
-/* line 46, node_modules/bootstrap/scss/_popover.scss */
+/* line 48, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-right .popover-arrow, .popover.bs-tether-element-attached-left .popover-arrow {
   top: 50%;
   left: -11px;
@@ -6944,7 +6899,7 @@ button.close {
   border-left-width: 0;
 }
 
-/* line 52, node_modules/bootstrap/scss/_popover.scss */
+/* line 54, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-right .popover-arrow::after, .popover.bs-tether-element-attached-left .popover-arrow::after {
   bottom: -10px;
   left: 1px;
@@ -6953,12 +6908,12 @@ button.close {
   border-left-width: 0;
 }
 
-/* line 62, node_modules/bootstrap/scss/_popover.scss */
+/* line 64, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-bottom, .popover.bs-tether-element-attached-top {
   margin-top: 10px;
 }
 
-/* line 66, node_modules/bootstrap/scss/_popover.scss */
+/* line 68, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-bottom .popover-arrow, .popover.bs-tether-element-attached-top .popover-arrow {
   top: -11px;
   left: 50%;
@@ -6967,7 +6922,7 @@ button.close {
   border-bottom-color: rgba(0, 0, 0, .25);
 }
 
-/* line 72, node_modules/bootstrap/scss/_popover.scss */
+/* line 74, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-bottom .popover-arrow::after, .popover.bs-tether-element-attached-top .popover-arrow::after {
   top: 1px;
   margin-left: -10px;
@@ -6976,12 +6931,12 @@ button.close {
   border-bottom-color: #fff;
 }
 
-/* line 82, node_modules/bootstrap/scss/_popover.scss */
+/* line 84, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-left, .popover.bs-tether-element-attached-right {
   margin-left: -10px;
 }
 
-/* line 86, node_modules/bootstrap/scss/_popover.scss */
+/* line 88, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-left .popover-arrow, .popover.bs-tether-element-attached-right .popover-arrow {
   top: 50%;
   right: -11px;
@@ -6990,7 +6945,7 @@ button.close {
   border-left-color: rgba(0, 0, 0, .25);
 }
 
-/* line 92, node_modules/bootstrap/scss/_popover.scss */
+/* line 94, node_modules/bootstrap/scss/_popover.scss */
 .popover.popover-left .popover-arrow::after, .popover.bs-tether-element-attached-right .popover-arrow::after {
   right: 1px;
   bottom: -10px;
@@ -6999,7 +6954,7 @@ button.close {
   border-left-color: #fff;
 }
 
-/* line 105, node_modules/bootstrap/scss/_popover.scss */
+/* line 107, node_modules/bootstrap/scss/_popover.scss */
 .popover-title {
   padding: 8px 14px;
   margin: 0;
@@ -7009,12 +6964,12 @@ button.close {
   border-radius: .2375rem .2375rem 0 0;
 }
 
-/* line 115, node_modules/bootstrap/scss/_popover.scss */
+/* line 117, node_modules/bootstrap/scss/_popover.scss */
 .popover-content {
   padding: 9px 14px;
 }
 
-/* line 125, node_modules/bootstrap/scss/_popover.scss */
+/* line 127, node_modules/bootstrap/scss/_popover.scss */
 .popover-arrow, .popover-arrow::after {
   position: absolute;
   display: block;
@@ -7024,12 +6979,12 @@ button.close {
   border-style: solid;
 }
 
-/* line 135, node_modules/bootstrap/scss/_popover.scss */
+/* line 137, node_modules/bootstrap/scss/_popover.scss */
 .popover-arrow {
   border-width: 11px;
 }
 
-/* line 138, node_modules/bootstrap/scss/_popover.scss */
+/* line 140, node_modules/bootstrap/scss/_popover.scss */
 .popover-arrow::after {
   content: "";
   border-width: 10px;
@@ -10011,9 +9966,10 @@ label.checkbox-inline .checkbox-decorator .check {
   height: 1.25rem;
   overflow: hidden;
   border: .125rem solid rgba(0, 0, 0, .54);
+  border-radius: .125rem;
 }
 
-/* line 36, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
+/* line 37, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
 .checkbox label .checkbox-decorator .check::before,
 label.checkbox-inline .checkbox-decorator .check::before {
   position: absolute;
@@ -10034,7 +9990,7 @@ label.checkbox-inline .checkbox-decorator .check::before {
           animation: checkbox-off .3s forwards;
 }
 
-/* line 57, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
+/* line 58, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
 .checkbox label input[type=checkbox],
 label.checkbox-inline input[type=checkbox] {
   position: absolute;
@@ -10048,20 +10004,20 @@ label.checkbox-inline input[type=checkbox] {
   opacity: 0;
 }
 
-/* line 70, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
+/* line 71, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
 .checkbox label input[type=checkbox]:focus + .checkbox-decorator .check::after,
 label.checkbox-inline input[type=checkbox]:focus + .checkbox-decorator .check::after {
   opacity: .2;
 }
 
-/* line 77, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
+/* line 78, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
 .checkbox label input[type=checkbox]:checked + .checkbox-decorator .check,
 label.checkbox-inline input[type=checkbox]:checked + .checkbox-decorator .check {
   color: #009688;
   border-color: #009688;
 }
 
-/* line 82, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
+/* line 83, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
 .checkbox label input[type=checkbox]:checked + .checkbox-decorator .check::before,
 label.checkbox-inline input[type=checkbox]:checked + .checkbox-decorator .check::before {
   color: #009688;
@@ -10072,7 +10028,7 @@ label.checkbox-inline input[type=checkbox]:checked + .checkbox-decorator .check:
           animation: checkbox-on .3s forwards;
 }
 
-/* line 93, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
+/* line 94, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
 .checkbox label input[type=checkbox]:checked + .checkbox-decorator::before,
 label.checkbox-inline input[type=checkbox]:checked + .checkbox-decorator::before {
   -webkit-animation: rippleOn 500ms;
@@ -10080,7 +10036,7 @@ label.checkbox-inline input[type=checkbox]:checked + .checkbox-decorator::before
           animation: rippleOn 500ms;
 }
 
-/* line 97, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
+/* line 98, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
 .checkbox label input[type=checkbox]:checked + .checkbox-decorator .check::after,
 label.checkbox-inline input[type=checkbox]:checked + .checkbox-decorator .check::after {
   -webkit-animation: rippleOn 500ms forwards;
@@ -10088,7 +10044,7 @@ label.checkbox-inline input[type=checkbox]:checked + .checkbox-decorator .check:
           animation: rippleOn 500ms forwards;
 }
 
-/* line 104, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
+/* line 105, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
 .checkbox label input[type=checkbox]:not(:checked) + .checkbox-decorator::before,
 label.checkbox-inline input[type=checkbox]:not(:checked) + .checkbox-decorator::before {
   -webkit-animation: rippleOff 500ms;
@@ -10096,7 +10052,7 @@ label.checkbox-inline input[type=checkbox]:not(:checked) + .checkbox-decorator::
           animation: rippleOff 500ms;
 }
 
-/* line 108, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
+/* line 109, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
 .checkbox label input[type=checkbox]:not(:checked) + .checkbox-decorator .check::after,
 label.checkbox-inline input[type=checkbox]:not(:checked) + .checkbox-decorator .check::after {
   -webkit-animation: rippleOff 500ms forwards;
@@ -10104,7 +10060,7 @@ label.checkbox-inline input[type=checkbox]:not(:checked) + .checkbox-decorator .
           animation: rippleOff 500ms forwards;
 }
 
-/* line 116, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
+/* line 117, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
 .checkbox label input[type=checkbox][disabled] + .checkbox-decorator .check::after,
 .checkbox label input[type=checkbox][disabled] .check::after,
 fieldset[disabled] .checkbox label input[type=checkbox] + .checkbox-decorator .check::after,
@@ -10122,7 +10078,7 @@ label.checkbox-inline input[type=checkbox] .check::after {
           transform: rotate(-45deg);
 }
 
-/* line 121, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
+/* line 122, /Users/kross/projects/bootstrap-material-design/scss/_checkboxes.scss */
 .checkbox label input[type=checkbox][disabled] + .checkbox-decorator .check,
 .checkbox label input[type=checkbox][disabled] .check,
 fieldset[disabled] .checkbox label input[type=checkbox] + .checkbox-decorator .check,
@@ -11516,7 +11472,7 @@ fieldset[disabled]
           transition-duration: .2s;
 }
 
-/* line 184, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 187, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .form-control,
 .mdb-form-group label,
 .mdb-form-group input::-webkit-input-placeholder {
@@ -11538,7 +11494,7 @@ fieldset[disabled]
   line-height: 1;
 }
 
-/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 193, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .radio label,
 .mdb-form-group label.radio-inline,
 .mdb-form-group .checkbox label,
@@ -11547,7 +11503,7 @@ fieldset[disabled]
   line-height: 1.5;
 }
 
-/* line 199, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 202, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group input::-webkit-input-placeholder {
   font-size: 1rem;
 }
@@ -11561,20 +11517,20 @@ fieldset[disabled]
   font-size: 1rem;
 }
 
-/* line 204, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 207, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .checkbox label,
 .mdb-form-group .radio label,
 .mdb-form-group label {
   font-size: 1rem;
 }
 
-/* line 211, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 214, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .mdb-label-floating,
 .mdb-form-group .mdb-label-placeholder {
   top: 2.1875rem;
 }
 
-/* line 222, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 225, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.is-focused .mdb-label-floating,
 .mdb-form-group .is-focused .mdb-label-floating, .mdb-form-group.is-filled .mdb-label-floating,
 .mdb-form-group .is-filled .mdb-label-floating {
@@ -11583,26 +11539,26 @@ fieldset[disabled]
   font-size: .75rem;
 }
 
-/* line 228, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 231, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .mdb-label-static {
   top: 1rem;
   left: 0;
   font-size: .75rem;
 }
 
-/* line 236, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 239, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .mdb-help {
   margin-top: 0;
   font-size: .75rem;
 }
 
-/* line 243, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 246, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .form-control.form-control-success, .mdb-form-group .form-control.form-control-warning, .mdb-form-group .form-control.form-control-danger {
   -webkit-background-size: 0 100%, 100% 100%, 1.21875rem 1.21875rem;
           background-size: 0 100%, 100% 100%, 1.21875rem 1.21875rem;
 }
 
-/* line 249, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 252, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .form-control.form-control-success, .mdb-form-group .form-control.form-control-success:focus,
 .mdb-form-group.is-focused .mdb-form-group .form-control.form-control-success, .mdb-form-group .form-control.form-control-warning, .mdb-form-group .form-control.form-control-warning:focus,
 .mdb-form-group.is-focused .mdb-form-group .form-control.form-control-warning, .mdb-form-group .form-control.form-control-danger, .mdb-form-group .form-control.form-control-danger:focus,
@@ -11612,7 +11568,7 @@ fieldset[disabled]
   background-position: center bottom, center calc(100% - 1px), center right .46875rem;
 }
 
-/* line 257, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 260, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group .form-control.form-control-success:focus,
 .mdb-form-group.is-focused .mdb-form-group .form-control.form-control-success, .mdb-form-group .form-control.form-control-warning:focus,
 .mdb-form-group.is-focused .mdb-form-group .form-control.form-control-warning, .mdb-form-group .form-control.form-control-danger:focus,
@@ -11626,7 +11582,7 @@ fieldset[disabled]
   padding-top: 1.40625rem;
 }
 
-/* line 184, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 187, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .form-control,
 .mdb-form-group.mdb-form-group-sm label,
 .mdb-form-group.mdb-form-group-sm input::-webkit-input-placeholder {
@@ -11648,7 +11604,7 @@ fieldset[disabled]
   line-height: 1;
 }
 
-/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 193, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .radio label,
 .mdb-form-group.mdb-form-group-sm label.radio-inline,
 .mdb-form-group.mdb-form-group-sm .checkbox label,
@@ -11657,7 +11613,7 @@ fieldset[disabled]
   line-height: 1.5;
 }
 
-/* line 199, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 202, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm input::-webkit-input-placeholder {
   font-size: .875rem;
 }
@@ -11671,20 +11627,20 @@ fieldset[disabled]
   font-size: .875rem;
 }
 
-/* line 204, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 207, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .checkbox label,
 .mdb-form-group.mdb-form-group-sm .radio label,
 .mdb-form-group.mdb-form-group-sm label {
   font-size: .875rem;
 }
 
-/* line 211, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 214, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .mdb-label-floating,
 .mdb-form-group.mdb-form-group-sm .mdb-label-placeholder {
   top: 1.65625rem;
 }
 
-/* line 222, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 225, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm.is-focused .mdb-label-floating,
 .mdb-form-group.mdb-form-group-sm .is-focused .mdb-label-floating, .mdb-form-group.mdb-form-group-sm.is-filled .mdb-label-floating,
 .mdb-form-group.mdb-form-group-sm .is-filled .mdb-label-floating {
@@ -11693,26 +11649,26 @@ fieldset[disabled]
   font-size: .65625rem;
 }
 
-/* line 228, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 231, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .mdb-label-static {
   top: .75rem;
   left: 0;
   font-size: .65625rem;
 }
 
-/* line 236, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 239, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .mdb-help {
   margin-top: 0;
   font-size: .65625rem;
 }
 
-/* line 243, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 246, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .form-control.form-control-success, .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning, .mdb-form-group.mdb-form-group-sm .form-control.form-control-danger {
   -webkit-background-size: 0 100%, 100% 100%, .89375rem .89375rem;
           background-size: 0 100%, 100% 100%, .89375rem .89375rem;
 }
 
-/* line 249, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 252, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .form-control.form-control-success, .mdb-form-group.mdb-form-group-sm .form-control.form-control-success:focus,
 .mdb-form-group.is-focused .mdb-form-group.mdb-form-group-sm .form-control.form-control-success, .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning, .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning:focus,
 .mdb-form-group.is-focused .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning, .mdb-form-group.mdb-form-group-sm .form-control.form-control-danger, .mdb-form-group.mdb-form-group-sm .form-control.form-control-danger:focus,
@@ -11722,7 +11678,7 @@ fieldset[disabled]
   background-position: center bottom, center calc(100% - 1px), center right .34375rem;
 }
 
-/* line 257, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 260, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-sm .form-control.form-control-success:focus,
 .mdb-form-group.is-focused .mdb-form-group.mdb-form-group-sm .form-control.form-control-success, .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning:focus,
 .mdb-form-group.is-focused .mdb-form-group.mdb-form-group-sm .form-control.form-control-warning, .mdb-form-group.mdb-form-group-sm .form-control.form-control-danger:focus,
@@ -11736,7 +11692,7 @@ fieldset[disabled]
   padding-top: 1.9375rem;
 }
 
-/* line 184, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 187, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .form-control,
 .mdb-form-group.mdb-form-group-lg label,
 .mdb-form-group.mdb-form-group-lg input::-webkit-input-placeholder {
@@ -11758,7 +11714,7 @@ fieldset[disabled]
   line-height: 1;
 }
 
-/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 193, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .radio label,
 .mdb-form-group.mdb-form-group-lg label.radio-inline,
 .mdb-form-group.mdb-form-group-lg .checkbox label,
@@ -11767,7 +11723,7 @@ fieldset[disabled]
   line-height: 1.5;
 }
 
-/* line 199, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 202, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg input::-webkit-input-placeholder {
   font-size: 1.25rem;
 }
@@ -11781,20 +11737,20 @@ fieldset[disabled]
   font-size: 1.25rem;
 }
 
-/* line 204, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 207, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .checkbox label,
 .mdb-form-group.mdb-form-group-lg .radio label,
 .mdb-form-group.mdb-form-group-lg label {
   font-size: 1.25rem;
 }
 
-/* line 211, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 214, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .mdb-label-floating,
 .mdb-form-group.mdb-form-group-lg .mdb-label-placeholder {
   top: 2.5rem;
 }
 
-/* line 222, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 225, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg.is-focused .mdb-label-floating,
 .mdb-form-group.mdb-form-group-lg .is-focused .mdb-label-floating, .mdb-form-group.mdb-form-group-lg.is-filled .mdb-label-floating,
 .mdb-form-group.mdb-form-group-lg .is-filled .mdb-label-floating {
@@ -11803,26 +11759,26 @@ fieldset[disabled]
   font-size: .9375rem;
 }
 
-/* line 228, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 231, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .mdb-label-static {
   top: 1rem;
   left: 0;
   font-size: .9375rem;
 }
 
-/* line 236, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 239, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .mdb-help {
   margin-top: 0;
   font-size: .9375rem;
 }
 
-/* line 243, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 246, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .form-control.form-control-success, .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning, .mdb-form-group.mdb-form-group-lg .form-control.form-control-danger {
   -webkit-background-size: 0 100%, 100% 100%, 1.54375rem 1.54375rem;
           background-size: 0 100%, 100% 100%, 1.54375rem 1.54375rem;
 }
 
-/* line 249, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 252, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .form-control.form-control-success, .mdb-form-group.mdb-form-group-lg .form-control.form-control-success:focus,
 .mdb-form-group.is-focused .mdb-form-group.mdb-form-group-lg .form-control.form-control-success, .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning, .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning:focus,
 .mdb-form-group.is-focused .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning, .mdb-form-group.mdb-form-group-lg .form-control.form-control-danger, .mdb-form-group.mdb-form-group-lg .form-control.form-control-danger:focus,
@@ -11832,7 +11788,7 @@ fieldset[disabled]
   background-position: center bottom, center calc(100% - 1px), center right .59375rem;
 }
 
-/* line 257, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 260, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-form-group.mdb-form-group-lg .form-control.form-control-success:focus,
 .mdb-form-group.is-focused .mdb-form-group.mdb-form-group-lg .form-control.form-control-success, .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning:focus,
 .mdb-form-group.is-focused .mdb-form-group.mdb-form-group-lg .form-control.form-control-warning, .mdb-form-group.mdb-form-group-lg .form-control.form-control-danger:focus,
@@ -11841,16 +11797,7 @@ fieldset[disabled]
           background-size: 100% 100%, 100% 100%, 1.54375rem 1.54375rem;
 }
 
-/* line 173, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
-.radio,
-label.radio-inline,
-.checkbox,
-label.checkbox-inline,
-.switch {
-  padding-top: .5rem;
-}
-
-/* line 184, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 187, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .form-control,
 label,
 input::-webkit-input-placeholder {
@@ -11872,7 +11819,7 @@ input::placeholder {
   line-height: 1;
 }
 
-/* line 190, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 193, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .radio label,
 label.radio-inline,
 .checkbox label,
@@ -11881,7 +11828,7 @@ label.checkbox-inline,
   line-height: 1.5;
 }
 
-/* line 199, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 202, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 input::-webkit-input-placeholder {
   font-size: 1rem;
 }
@@ -11895,20 +11842,20 @@ input::placeholder {
   font-size: 1rem;
 }
 
-/* line 204, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 207, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .checkbox label,
 .radio label,
 label {
   font-size: 1rem;
 }
 
-/* line 211, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 214, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-label-floating,
 .mdb-label-placeholder {
   top: 2.1875rem;
 }
 
-/* line 222, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 225, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .is-focused .mdb-label-floating,
 .is-focused .mdb-label-floating,
 .is-filled .mdb-label-floating,
@@ -11918,26 +11865,26 @@ label {
   font-size: .75rem;
 }
 
-/* line 228, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 231, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-label-static {
   top: 1rem;
   left: 0;
   font-size: .75rem;
 }
 
-/* line 236, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 239, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .mdb-help {
   margin-top: 0;
   font-size: .75rem;
 }
 
-/* line 243, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 246, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .form-control.form-control-success, .form-control.form-control-warning, .form-control.form-control-danger {
   -webkit-background-size: 0 100%, 100% 100%, 1.21875rem 1.21875rem;
           background-size: 0 100%, 100% 100%, 1.21875rem 1.21875rem;
 }
 
-/* line 249, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 252, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .form-control.form-control-success, .form-control.form-control-success:focus,
 .mdb-form-group.is-focused .form-control.form-control-success, .form-control.form-control-warning, .form-control.form-control-warning:focus,
 .mdb-form-group.is-focused .form-control.form-control-warning, .form-control.form-control-danger, .form-control.form-control-danger:focus,
@@ -11947,7 +11894,7 @@ label {
   background-position: center bottom, center calc(100% - 1px), center right .46875rem;
 }
 
-/* line 257, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
+/* line 260, /Users/kross/projects/bootstrap-material-design/scss/mixins/_forms.scss */
 .form-control.form-control-success:focus,
 .mdb-form-group.is-focused .form-control.form-control-success, .form-control.form-control-warning:focus,
 .mdb-form-group.is-focused .form-control.form-control-warning, .form-control.form-control-danger:focus,
@@ -11965,25 +11912,34 @@ select, select.form-control {
 
 /* line 8, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
 .list-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   padding: .5rem 0;
+          flex-direction: column;
 
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-/* line 15, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
+/* line 22, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
 .list-group.mdb-list-group-sm {
   padding: .25rem 0;
 }
 
-/* line 18, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
+/* line 25, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
 .list-group.mdb-list-group-sm .list-group-item {
   padding: .5rem 1rem;
 }
 
-/* line 24, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
+/* line 31, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
 .mdb-list-group-col {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11998,13 +11954,25 @@ select, select.form-control {
       -ms-flex-direction: column;
 }
 
-/* line 31, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
+/* line 38, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
 .list-group-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   padding: 1rem;
   line-height: 1;
+
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
 }
 
-/* line 35, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
+/* line 51, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
 .list-group-item .list-group-item-text {
   min-width: 0;
   max-height: 2.188rem;
@@ -12012,12 +11980,12 @@ select, select.form-control {
   text-overflow: ellipsis;
 }
 
-/* line 49, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
+/* line 65, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
 .list-group-item :first-child {
   margin-right: 2rem;
 }
 
-/* line 54, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
+/* line 70, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
 .list-group-item > .pull-xs-right,
 .list-group-item > .pull-sm-right,
 .list-group-item > .pull-md-right,
@@ -12029,7 +11997,7 @@ select, select.form-control {
   margin-left: auto;
 }
 
-/* line 66, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
+/* line 82, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
 .list-group-item .material-icons.pull-xs-right,
 .list-group-item .material-icons.pull-sm-right,
 .list-group-item .material-icons.pull-md-right,
@@ -12039,7 +12007,7 @@ select, select.form-control {
   padding-left: 1rem;
 }
 
-/* line 80, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
+/* line 96, /Users/kross/projects/bootstrap-material-design/scss/_list-group.scss */
 .list-group-item .list-group-item-text {
   font-size: .875rem;
   color: rgba(0, 0, 0, .54);
@@ -12157,11 +12125,36 @@ select, select.form-control {
 
 /* line 1, /Users/kross/projects/bootstrap-material-design/scss/_navbar.scss */
 .navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   margin-bottom: .25rem;
   border: 0;
   border-radius: 0;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+          align-self: stretch;
+}
+
+/* line 15, /Users/kross/projects/bootstrap-material-design/scss/_navbar.scss */
+.navbar > * {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 
 /* line 1, /Users/kross/projects/bootstrap-material-design/scss/_alerts.scss */

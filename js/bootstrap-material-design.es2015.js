@@ -5573,7 +5573,7 @@ const Select = (($) => {
   const JQUERY_NO_CONFLICT = $.fn[JQUERY_NAME]
 
   const Default = {
-    requiredClasses: ['form-control||c-select']
+    requiredClasses: ['form-control||custom-select']
   }
 
   /**
@@ -6664,7 +6664,7 @@ const BootstrapMaterialDesign = (($) => {
       'checkboxInline',
       'collapseInline',
       'drawer',
-      'file',
+      //'file',
       'radio',
       'radioInline',
       'switch',

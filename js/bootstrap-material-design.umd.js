@@ -2072,7 +2072,7 @@
     var JQUERY_NO_CONFLICT = $.fn[JQUERY_NAME];
 
     var Default = {
-      requiredClasses: ['form-control||c-select']
+      requiredClasses: ['form-control||custom-select']
     };
 
     /**
@@ -3312,7 +3312,9 @@
       },
       arrive: true,
       // create an ordered component list for instantiation
-      instantiation: ['ripples', 'checkbox', 'checkboxInline', 'collapseInline', 'drawer', 'file', 'radio', 'radioInline', 'switch', 'text', 'textarea', 'select', 'autofill']
+      instantiation: ['ripples', 'checkbox', 'checkboxInline', 'collapseInline', 'drawer',
+      //'file',
+      'radio', 'radioInline', 'switch', 'text', 'textarea', 'select', 'autofill']
     };
 
     /**
